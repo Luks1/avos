@@ -3,6 +3,7 @@ var avos = " 1 for R3, 2 for R7, 3 for R10, 5 for R14.50";
 var newArray = [];
 var array = avos.split(",");
         console.log(array);
+      
 
 
   // forEach for my array
@@ -26,7 +27,7 @@ var pricePerEachAvo = price / quantity;
 
     //console.log out the prices for each avo with ony two decimals
   prices.push(pricePerEachAvo.toFixed(2));
- //console.log(pricePerEachAvo.toFixed(2));
+ console.log(pricePerEachAvo.toFixed(2));
 
 });
 
@@ -48,36 +49,3 @@ for (var i = 0; i<prices.length; i++) {
  avg = sum / prices.length;
 //printing out my avarage
 console.log(avg);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var items = [];
-// items.push((avos)
-// //creating a variable to remove that "for" and "R"
-// var items = avos
-//
-// .replace("for R",  ":")
-// .replace("for R",  ":")
-// .replace("for R",  ":")
-// .replace("for R",  ":")
-// .replace("for R",  ":")
-//
-// console.log(items);
