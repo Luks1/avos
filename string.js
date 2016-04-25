@@ -1,6 +1,7 @@
 module.exports = function(avos){
         //creating new array
 var newArray = [];
+
 var array = avos.split(",");
 
 
@@ -11,6 +12,8 @@ var array = avos.split(",");
   newArray.push(avos.split("for R"));
 
 });
+
 console.log(newArray);
 return newArray;
+
 }
