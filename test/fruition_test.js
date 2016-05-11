@@ -1,4 +1,5 @@
-//var appleSellerAscending = require('../appleSellerAscending');
+var appleSellerDescending = require('../appleSellerDescending')
+var appleSellerAscending = require('../appleSellerAscending');
 var seller_cheapest_orange = require('../seller_cheapest_orange');
 var assert = require('assert');
 
@@ -35,17 +36,28 @@ var obj ={
   }
 };
 
-describe('A cheapest shop', function(){
-  it('it should give me the cheapest orange', function(){
+describe('A fruition test', function(){
+  it('it should give me the name of cheapest shop in orange', function(){
     assert.equal(seller_cheapest_orange(obj),'chockers')
   })
-//   it('it should give me apples price ascending', function(){
-//     assert.deepEqual(appleSellerAscending(obj),[
-//   { shop: "shopwrong", price: 2 },
-//   { shop: "woolingsworth", price: 4 },
-//   { shop: 'kwakspar', price: 4 },
-//   { shop: "chockers", price: 5 }
-// ]
-// )
-//   })
+  it('it should give me apples price ascending', function(){
+    assert.deepEqual(appleSellerAscending(obj),[
+  { shop: "shopwrong", price: 2 },
+  { shop: "woolingsworth", price: 4 },
+  { shop: 'kwakspar', price: 4 },
+  { shop: "chockers", price: 5 }
+]
+)
+  })
+  it('it should give me apples price descending', function(){
+    assert.deepEqual(appleSellerDescending(obj),
+    [
+  { shop: "chockers", price: 5  },
+  { shop: "woolingsworth", price: 4 },
+    { shop: 'kwakspar', price: 4 },
+  { shop: "shopwrong", price: 2 }
+  ]
+  )
+
+})
 })
