@@ -1,3 +1,4 @@
+var cheapest_fruit = require('../cheapest_fruit');
 var appleSellerDescending = require('../appleSellerDescending')
 var appleSellerAscending = require('../appleSellerAscending');
 var seller_cheapest_orange = require('../seller_cheapest_orange');
@@ -60,4 +61,7 @@ describe('A fruition test', function(){
   )
 
 })
+it('it should give me the cheapest fruit', function(){
+  assert.equal(cheapest_fruit(obj),'apples')
 })
+});
